@@ -1,0 +1,50 @@
+[main ea301e0] Scrematura Wiki 2026-03-14
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (88%)
+To github.com:Burroughs7005/music-almanac.git
+   fd4c1f3..ea301e0  main -> main
+[2026-03-14 08:00:03.452204] Scrematura album del 14 March...
+Aggiornato con 40 album selezionati.
+[main 4ac5b90] Roon Update 2026-03-15
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To github.com:Burroughs7005/music-almanac.git
+   7fa0f0c..4ac5b90  main -> main
+Caricati 243 artisti.
+[2026-03-15 06:00:03.639666] Scouting Roon Library per il 15 March...
+  🎵 MATCH: Too Busy Thinking About My Baby - Marvin Gaye (1969)
+
+Completato: 1 match.
+[main 24ef21a] Roon Update 2026-03-16
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To github.com:Burroughs7005/music-almanac.git
+   4ac5b90..24ef21a  main -> main
+Caricati 243 artisti.
+[2026-03-16 06:00:03.463724] Scouting Roon Library per il 16 March...
+  🎵 MATCH: Black Water - The Doobie Brothers (1975)
+  🎵 MATCH: Got To Give It Up (Part 1) - Marvin Gaye (1977)
+
+Completato: 2 match.
+[main 8ec9170] Roon Update 2026-03-17
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (68%)
+To github.com:Burroughs7005/music-almanac.git
+   24ef21a..8ec9170  main -> main
+Caricati 243 artisti.
+[2026-03-17 06:00:03.274980] Scouting Roon Library per il 17 March...
+  🎵 MATCH: The Dark Side of the Moon - Pink Floyd (1973)
+  🎵 MATCH: Black Water - The Doobie Brothers (1975)
+  🎵 MATCH: Sir Duke - Stevie Wonder (1977)
+
+Completato: 3 match.
+[main 62abb14] Roon Update 2026-03-18 (Anti-Dupe)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To github.com:Burroughs7005/music-almanac.git
+   444136b..62abb14  main -> main
+Caricati 243 artisti.
+[2026-03-18 06:00:03.632735] Scouting Roon Library per il 18 March...
+  🎵 MATCH: Too Busy Thinking About My Baby - Marvin Gaye (1969)
+  ⏭️  SALTATO (GIA' INVIATO): Black Water
+  ⏭️  SALTATO (GIA' INVIATO): Sir Duke
+  🎵 MATCH: Got To Give It Up (Part 1) - Marvin Gaye (1977)
+
+Operazione completata con successo.
