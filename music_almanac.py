@@ -7,7 +7,7 @@ import re
 from feedgen.feed import FeedGenerator
 
 # Configurazione
-CSV_FILE = "RoonBuddy.xlsx - RoonBuddy (31-12-2025).csv"
+CSV_FILE = "RoonBuddy.csv"
 LOG_FILE = "sent_albums.log"
 
 def load_sent_albums():
