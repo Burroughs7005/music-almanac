@@ -85,3 +85,10 @@ To github.com:Burroughs7005/music-almanac.git
    fd9ab0f..5e8ce8e  main -> main
 Caricati 243 artisti. Avvio deep scan...
   🎵 MATCH: Got To Give It Up (Part 1) (1977)
+[main b1fbbfb] Roon Almanac Update 2026-03-26
+ 2 files changed, 2 insertions(+), 48 deletions(-)
+ rewrite music_history.xml (81%)
+ delete mode 100755 test_springsteen.py
+To github.com:Burroughs7005/music-almanac.git
+   187d85e..b1fbbfb  main -> main
+[2026-03-26 05:00:02.603705] Scansione RoonBuddy per il 26/03...
