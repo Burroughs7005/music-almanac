@@ -253,3 +253,9 @@ To github.com:Burroughs7005/music-almanac.git
    8b8a4b9..d789dea  main -> main
 [2026-04-16 05:00:02.191114] Scansione RoonBuddy per il 16/04...
   🎵 MATCH TROVATO: Long Walk Home: Music from the Rabbit-Proof Fence - Peter Gabriel (2002)
+[main 38638fc] Roon Almanac Update 2026-04-17
+ 2 files changed, 8 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (60%)
+To github.com:Burroughs7005/music-almanac.git
+   d789dea..38638fc  main -> main
+[2026-04-17 05:00:02.050231] Scansione RoonBuddy per il 17/04...
