@@ -295,3 +295,10 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Never Let Me Down - David Bowie (1987)
   🎵 MATCH TROVATO: Fuse - Everything But the Girl (2023)
   🎵 MATCH TROVATO: Nel vuoto - Garbo (2023)
+[main 82f1c20] Roon Almanac Update 2026-04-22
+ 3 files changed, 12 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (77%)
+To github.com:Burroughs7005/music-almanac.git
+   88ad515..82f1c20  main -> main
+[2026-04-22 05:00:02.027495] Scansione RoonBuddy per il 22/04...
+  🎵 MATCH TROVATO: Around the World in a Day (Deluxe Edition) (2025 Remaster) - Prince and the Revolution (1985)
