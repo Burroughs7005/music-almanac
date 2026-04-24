@@ -302,3 +302,10 @@ To github.com:Burroughs7005/music-almanac.git
    88ad515..82f1c20  main -> main
 [2026-04-22 05:00:02.027495] Scansione RoonBuddy per il 22/04...
   🎵 MATCH TROVATO: Around the World in a Day (Deluxe Edition) (2025 Remaster) - Prince and the Revolution (1985)
+[main bb44c48] Roon Almanac Update 2026-04-23
+ 3 files changed, 10 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (62%)
+To github.com:Burroughs7005/music-almanac.git
+   82f1c20..bb44c48  main -> main
+[2026-04-23 05:00:01.648832] Scansione RoonBuddy per il 23/04...
+  🎵 MATCH TROVATO: Sticky Fingers - The Rolling Stones (1971)
