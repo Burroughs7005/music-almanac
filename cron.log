@@ -365,3 +365,10 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Laughter & Lust - Joe Jackson (1991)
   🎵 MATCH TROVATO: Live at Knebworth 1990 - Pink Floyd (2021)
   🎵 MATCH TROVATO: A Walk Across the Rooftops - The Blue Nile (1984)
+[main ae006c5] Roon Almanac Update 2026-05-01
+ 3 files changed, 13 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (81%)
+To github.com:Burroughs7005/music-almanac.git
+   a8952c1..ae006c5  main -> main
+[2026-05-01 05:00:01.752457] Scansione RoonBuddy per il 01/05...
+  🎵 MATCH TROVATO: Suzanne Vega - Suzanne Vega (1985)
