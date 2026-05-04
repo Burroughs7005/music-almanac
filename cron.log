@@ -379,3 +379,10 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-05-02 05:00:02.423294] Scansione RoonBuddy per il 02/05...
   🎵 MATCH TROVATO: Pearl Jam - Pearl Jam (2006)
   🎵 MATCH TROVATO: Flying with Angels - Suzanne Vega (2025)
+[main 923b61f] Roon Almanac Update 2026-05-03
+ 3 files changed, 10 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (65%)
+To github.com:Burroughs7005/music-almanac.git
+   3e327bf..923b61f  main -> main
+[2026-05-03 05:00:01.799542] Scansione RoonBuddy per il 03/05...
+  🎵 MATCH TROVATO: Heaven and Earth - John Martyn (2011)
