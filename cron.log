@@ -422,3 +422,11 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Look into the Eyeball - David Byrne (2001)
   🎵 MATCH TROVATO: Paolo Conte alla Scala - Il Maestro è nell'anima (Live) - Paolo Conte (2024)
   🎵 MATCH TROVATO: Let It Be - The Beatles (1970)
+[main 7e20c63] Roon Almanac Update 2026-05-09
+ 3 files changed, 13 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (75%)
+To github.com:Burroughs7005/music-almanac.git
+   d738ca1..7e20c63  main -> main
+[2026-05-09 05:00:01.960149] Scansione RoonBuddy per il 09/05...
+  🎵 MATCH TROVATO: Surprise - Paul Simon (2006)
+  🎵 MATCH TROVATO: Heliocentric - Paul Weller (2000)
