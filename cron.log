@@ -509,3 +509,12 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Saturns Pattern - Paul Weller (2015)
   🎵 MATCH TROVATO: Passi d'autore - Pino Daniele Project (2004)
   🎵 MATCH TROVATO: Love and Its Opposite - Tracey Thorn (2010)
+[main a84bd4d] Roon Almanac Update 2026-05-19
+ 3 files changed, 14 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (77%)
+To github.com:Burroughs7005/music-almanac.git
+   dace9f4..a84bd4d  main -> main
+[2026-05-19 05:00:01.491526] Scansione RoonBuddy per il 19/05...
+  🎵 MATCH TROVATO: Seven Psalms - Paul Simon (2023)
+  🎵 MATCH TROVATO: So - Peter Gabriel (1986)
+  🎵 MATCH TROVATO: Parade [Music From the Motion Picture Under the Cherry Moon] - Prince and the Revolution (1986)
