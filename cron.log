@@ -518,3 +518,12 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Seven Psalms - Paul Simon (2023)
   🎵 MATCH TROVATO: So - Peter Gabriel (1986)
   🎵 MATCH TROVATO: Parade [Music From the Motion Picture Under the Cherry Moon] - Prince and the Revolution (1986)
+[main 40cbde5] Roon Almanac Update 2026-05-20
+ 3 files changed, 14 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (75%)
+To github.com:Burroughs7005/music-almanac.git
+   a84bd4d..40cbde5  main -> main
+[2026-05-20 05:00:02.085941] Scansione RoonBuddy per il 20/05...
+  🎵 MATCH TROVATO: The Promise - Earth, Wind & Fire (2003)
+  🎵 MATCH TROVATO: My Favorite Things [Rhino] - John Coltrane (2022)
+  🎵 MATCH TROVATO: What's Going On - Marvin Gaye (1971)
