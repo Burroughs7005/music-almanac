@@ -527,3 +527,12 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: The Promise - Earth, Wind & Fire (2003)
   🎵 MATCH TROVATO: My Favorite Things [Rhino] - John Coltrane (2022)
   🎵 MATCH TROVATO: What's Going On - Marvin Gaye (1971)
+[main c2aa8ed] Roon Almanac Update 2026-05-21
+ 3 files changed, 14 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (73%)
+To github.com:Burroughs7005/music-almanac.git
+   40cbde5..c2aa8ed  main -> main
+[2026-05-21 05:00:01.672923] Scansione RoonBuddy per il 21/05...
+  🎵 MATCH TROVATO: Walking Wounded - Everything But the Girl (1996)
+  🎵 MATCH TROVATO: Mid Air - Paul Buchanan (2012)
+  🎵 MATCH TROVATO: McCartney II - Paul McCartney (1980)
