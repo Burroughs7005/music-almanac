@@ -155,10 +155,8 @@ def run_daily_almanac():
         print("Nessun anniversario musicale valido trovato per oggi.")
         return
 
-    # Divisione rigorosa in tre categorie distinte
-    compleanni = [r for r in ricorrenze_oggi if r['type'] == 'Nascita' and not r['is_dead']]
-    nascite_ricorrenze = [r for r in ricorrenze_oggi if r['type'] == 'Nascita' and r['is_dead']]
-    scomparse = [r for r in ricorrenze_oggi if r['type'] == 'Morte']
+    nascite = [r for r in ricorrenze_oggi if r['type'] == 'Nascita']
+    morti = [r for r in ricorrenze_oggi if r['type'] == 'Morte']
 
     css_style = """
     body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f6f8; color: #333; margin: 0; padding: 20px; }
@@ -168,12 +166,10 @@ def run_daily_almanac():
     .header p { margin: 5px 0 0 0; font-size: 13px; color: #9ca3af; }
     .content { padding: 25px 20px; }
     .section-title { font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: bold; margin-top: 25px; margin-bottom: 12px; padding-bottom: 4px; }
-    .title-birthday { color: #0d9488; border-bottom: 2px solid #ccfbf1; }
-    .title-memory { color: #b45309; border-bottom: 2px solid #fef3c7; }
+    .title-birth { color: #0d9488; border-bottom: 2px solid #ccfbf1; }
     .title-death { color: #64748b; border-bottom: 2px solid #e2e8f0; }
     .event-card { padding: 12px 15px; margin-bottom: 10px; border-radius: 0 6px 6px 0; }
-    .card-birthday { border-left: 4px solid #0d9488; background-color: #f0fdfa; }
-    .card-memory { border-left: 4px solid #d97706; background-color: #fffbec; }
+    .card-birth { border-left: 4px solid #0d9488; background-color: #f0fdfa; }
     .card-death { border-left: 4px solid #64748b; background-color: #f8fafc; }
     .artist-name { font-size: 15px; font-weight: 600; color: #1f2937; }
     .event-details { font-size: 13px; color: #4b5563; margin-top: 2px; }
@@ -188,24 +184,16 @@ def run_daily_almanac():
     html_content += "</div><div class='content'>"
     html_content += "<p style='margin-top:0; font-size: 14px; color:#4b5563;'>Buongiorno Andrea, ecco gli anniversari di oggi:</p>"
 
-    # SEZIONE 1: COMPLEANNI (VIVI)
-    if compleanni:
-        html_content += "<div class='section-title title-birthday'>🎂 Festeggiano Oggi</div>"
-        for n in compleanni:
+    if nascite:
+        html_content += "<div class='section-title title-birth'>🎂 Nascite ed Anniversari</div>"
+        for n in nascite:
             badge = "<span class='badge-centenario'>✨ CENTENARIO</span>" if n['delta'] == 100 else ""
-            html_content += f"<div class='event-card card-birthday'><div class='artist-name'>{n['subject']}{badge}</div><div class='event-details'>Compie <strong>{n['delta']} anni</strong> (nato nel {n['anno']})</div></div>"
+            dettaglio = f"Avrebbe compiuto <strong>{n['delta']} anni</strong> (nato nel {n['anno']})" if n['is_dead'] else f"Compie <strong>{n['delta']} anni</strong> (nato nel {n['anno']})"
+            html_content += f"<div class='event-card card-birth'><div class='artist-name'>{n['subject']}{badge}</div><div class='event-details'>{dettaglio}</div></div>"
 
-    # SEZIONE 2: RICORRENZE NASCITA (ARTISTI SCOMPARSI)
-    if nascite_ricorrenze:
-        html_content += "<div class='section-title title-memory'>🕯️ Ricorrenze della Nascita</div>"
-        for n in nascite_ricorrenze:
-            badge = "<span class='badge-centenario'>✨ CENTENARIO</span>" if n['delta'] == 100 else ""
-            html_content += f"<div class='event-card card-memory'><div class='artist-name'>{n['subject']}{badge}</div><div class='event-details'>Avrebbe compiuto <strong>{n['delta']} anni</strong> (nato nel {n['anno']})</div></div>"
-
-    # SEZIONE 3: ANNIVERSARI SCOMPARSA
-    if scomparse:
+    if morti:
         html_content += "<div class='section-title title-death'>🖤 Anniversari della Scomparsa</div>"
-        for m in scomparse:
+        for m in morti:
             html_content += f"<div class='event-card card-death'><div class='artist-name'>{m['subject']}</div><div class='event-details'>Scomparso nel <strong>{m['anno']}</strong> — {m['delta']} anni fa</div></div>"
 
     html_content += "</div><div class='footer'>Generato da glasgy.pi • RoonBuddy Almanac Project</div></div></body></html>"
