@@ -569,3 +569,14 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: 66 - Paul Weller (2024)
   🎵 MATCH TROVATO: Iguana Cafè (Latin Blues e Melodie) - Pino Daniele (2005)
   🎵 MATCH TROVATO: Where the Action Is - The Waterboys (2019)
+[main ccc9302] Roon Almanac Update 2026-05-25
+ 4 files changed, 286 insertions(+), 220 deletions(-)
+ create mode 100644 almanac_init.log
+ delete mode 100755 music_births.py_imp
+To github.com:Burroughs7005/music-almanac.git
+   486e4b1..ccc9302  main -> main
+[2026-05-25 05:00:01.951012] Scansione RoonBuddy per il 25/05...
+  🎵 MATCH TROVATO: Dreamland - Aztec Camera (1993)
+  🎵 MATCH TROVATO: Lodger - David Bowie (1979)
+  🎵 MATCH TROVATO: Kamakiriad - Donald Fagen (1993)
+  🎵 MATCH TROVATO: Dream Harder - The Waterboys (1993)
