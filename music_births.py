@@ -152,7 +152,7 @@ def run_daily_almanac():
             })
 
     if not ricorrenze_oggi:
-        print("Nessun anniversario musicale valido trovato per oggi.")
+        print("Nessun anniversario musicale trovato per oggi.")
         return
 
     # Divisione rigorosa in tre categorie distinte
