@@ -31,7 +31,7 @@ def clean_and_split_artists(artist_string):
     return cleaned
 
 def fetch_wikidata_api(artist_name):
-    """Cerca l'artista usando l'API nativa di Wikidata (Search + Entity Get)"""
+    """Cerca l'artista usando l'API nativa di Wikidata con filtro anti-omonimia per musicisti"""
     search_url = "https://www.wikidata.org/w/api.php"
     headers = {'User-Agent': 'RoonAlmanacBuddy/3.0 (andrea.lutri@gmail.com)'}
     events = []
@@ -41,7 +41,7 @@ def fetch_wikidata_api(artist_name):
             'search': artist_name,
             'language': 'en',
             'format': 'json',
-            'limit': 3
+            'limit': 5  # Più candidati per scovare il musicista se nascosto sotto un omonimo
         }
         r_search = requests.get(search_url, params=search_params, headers=headers, timeout=10)
         if r_search.status_code != 200:
@@ -56,12 +56,32 @@ def fetch_wikidata_api(artist_name):
         if not results:
             return events
 
+        # LOGICA ANTI-OMONIMIA: Cerchiamo il candidato che appartenga al mondo della musica
         entity_id = None
+        parole_chiave_musica = ['music', 'musician', 'composer', 'singer', 'band', 'jazz', 'pianist', 'guitarist', 'producer', 'rock', 'pop']
+        parole_chiave_escludi = ['actor', 'actress', 'footballer', 'politician', 'player', 'film', 'movie']
+
+        # 1. Tentativo: Cerca qualcuno che abbia una descrizione esplicitamente musicale
         for cand in results:
-            if cand.get('label', '').lower() == artist_name.lower() or cand.get('match', {}).get('text', '').lower() == artist_name.lower():
-                entity_id = cand['id']
-                break
-        
+            desc = cand.get('description', '').lower()
+            label = cand.get('label', '').lower()
+            
+            if label == artist_name.lower() or cand.get('match', {}).get('text', '').lower() == artist_name.lower():
+                if any(kw in desc for kw in parole_chiave_musica):
+                    entity_id = cand['id']
+                    break
+
+        # 2. Tentativo: Se mancano parole chiave musicali, prendiamo il primo che NON sia un attore/sportivo esplicito
+        if not entity_id:
+            for cand in results:
+                desc = cand.get('description', '').lower()
+                label = cand.get('label', '').lower()
+                if label == artist_name.lower() or cand.get('match', {}).get('text', '').lower() == artist_name.lower():
+                    if not any(kw in desc for kw in parole_chiave_escludi):
+                        entity_id = cand['id']
+                        break
+
+        # 3. Fallback: Se tutti i filtri falliscono, prendiamo il primo risultato
         if not entity_id:
             entity_id = results[0]['id']
 
@@ -152,7 +172,7 @@ def run_daily_almanac():
             })
 
     if not ricorrenze_oggi:
-        print("Nessun anniversario musicale trovato per oggi.")
+        print("Nessun anniversario musicale valido trovato per oggi.")
         return
 
     # Divisione rigorosa in tre categorie distinte

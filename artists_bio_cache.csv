@@ -2,9 +2,11 @@ artist_key,subject,type,date,is_dead
 Al Di Meola,Al Di Meola,Nascita,1954-07-22,False
 Al Jarreau,Al Jarreau,Nascita,1940-03-12,True
 Al Jarreau,Al Jarreau,Morte,2017-02-12,True
+Alice,Alice,Nascita,1990-03-21,False
 Amy Winehouse,Amy Winehouse,Nascita,1983-09-14,True
 Amy Winehouse,Amy Winehouse,Morte,2011-07-23,True
 Andy Partridge,Andy Partridge,Nascita,1953-11-11,False
+Andy Summers,Andy Summers,Nascita,1942-12-31,False
 Anita Baker,Anita Baker,Nascita,1958-01-26,False
 Arturo Benedetti Michelangeli,Arturo Benedetti Michelangeli,Nascita,1920-01-05,True
 Arturo Benedetti Michelangeli,Arturo Benedetti Michelangeli,Morte,1995-06-12,True
@@ -19,6 +21,7 @@ Björk,Björk,Nascita,1965-11-21,False
 Bob Dylan,Bob Dylan,Nascita,1941-05-24,False
 Bob Neuwirth,Bob Neuwirth,Nascita,1939-06-20,True
 Bob Neuwirth,Bob Neuwirth,Morte,2022-05-18,True
+Boz Scaggs,Boz Scaggs,Nascita,1944-06-08,False
 Brian Eno,Brian Eno,Nascita,1948-05-15,False
 Bruce Springsteen,Bruce Springsteen,Nascita,1949-09-23,False
 Bryan Ferry,Bryan Ferry,Nascita,1945-09-26,False
@@ -31,9 +34,9 @@ Charles Mingus,Charles Mingus,Nascita,1922-04-22,True
 Charles Mingus,Charles Mingus,Morte,1979-01-05,True
 Chris Rea,Chris Rea,Nascita,1951-03-04,True
 Chris Rea,Chris Rea,Morte,2025-12-22,True
+Claire Martin,Claire Martin,Nascita,1967-09-06,False
 Curt Smith,Curt Smith,Nascita,1961-06-24,False
 Daniel Lanois,Daniel Lanois,Nascita,1951-09-19,False
-Danny Wilson,Danny Wilson,Nascita,1960-01-01,False
 Daryl Hall,Daryl Hall,Nascita,1946-10-11,False
 Dave Grusin,Dave Grusin,Nascita,1934-06-26,False
 Dave Holland,Dave Holland,Nascita,1946-10-01,False
@@ -48,9 +51,11 @@ Dee C Lee,Dee C Lee,Nascita,1961-06-06,False
 Dee C. Lee,Dee C. Lee,Nascita,1961-06-06,False
 Dexter Gordon,Dexter Gordon,Nascita,1923-02-27,True
 Dexter Gordon,Dexter Gordon,Morte,1990-04-25,True
+Djavan,Djavan,Nascita,1949-01-27,False
 Donald Fagen,Donald Fagen,Nascita,1948-01-10,False
 Elvis Costello,Elvis Costello,Nascita,1954-08-25,False
 Emma-Jean Thackray,Emma-Jean Thackray,Nascita,1989-00-00,False
+Eno,Eno,Nascita,1948-05-15,False
 Erykah Badu,Erykah Badu,Nascita,1971-02-26,False
 Esperanza Spalding,Esperanza Spalding,Nascita,1984-10-18,False
 Fabrizio De André,Fabrizio De André,Nascita,1940-02-18,True
@@ -80,13 +85,12 @@ Ivan Lins,Ivan Lins,Nascita,1945-06-16,False
 Ivano Fossati,Ivano Fossati,Nascita,1951-09-21,False
 James Grant,James Grant,Nascita,1720-01-01,True
 James Grant,James Grant,Morte,1806-04-13,True
-Jason Miles,Jason Miles,Nascita,1980-01-01,False
+Jason Miles,Jason Miles,Nascita,1951-06-30,False
 Joe Jackson,Joe Jackson,Nascita,1954-08-11,False
 Joe Jackson Band,Joe Jackson Band,Nascita,1954-08-11,False
 Joe Sample,Joe Sample,Nascita,1939-02-01,True
 Joe Sample,Joe Sample,Morte,2014-09-12,True
-John Beasley,John Beasley,Nascita,1943-06-26,True
-John Beasley,John Beasley,Morte,2023-05-30,True
+John Beasley,John Beasley,Nascita,1958-10-10,False
 John Cale,John Cale,Nascita,1942-03-09,False
 John Coltrane,John Coltrane,Nascita,1926-09-23,True
 John Coltrane,John Coltrane,Morte,1967-07-17,True
@@ -94,8 +98,8 @@ John Lennon,John Lennon,Nascita,1940-10-09,True
 John Lennon,John Lennon,Morte,1980-12-08,True
 John Martyn,John Martyn,Nascita,1948-09-11,True
 John Martyn,John Martyn,Morte,2009-01-29,True
-John Oates,John Oates,Nascita,1932-04-23,True
-John Oates,John Oates,Morte,2019-07-30,True
+John McLaughlin,John McLaughlin,Nascita,1942-01-04,False
+John Oates,John Oates,Nascita,1949-04-07,False
 John Surman,John Surman,Nascita,1944-08-30,False
 Joni Mitchell,Joni Mitchell,Nascita,1943-11-07,False
 Kate Bush,Kate Bush,Nascita,1958-07-30,False
@@ -112,7 +116,7 @@ Lyle Mays,Lyle Mays,Nascita,1953-11-27,True
 Lyle Mays,Lyle Mays,Morte,2020-02-10,True
 Marian McPartland,Marian McPartland,Nascita,1918-03-20,True
 Marian McPartland,Marian McPartland,Morte,2013-08-20,True
-Martin Newell,Martin Newell,Nascita,1953-01-01,False
+Martin Newell,Martin Newell,Nascita,1953-03-03,False
 Marvin Gaye,Marvin Gaye,Nascita,1939-04-02,True
 Marvin Gaye,Marvin Gaye,Morte,1984-04-01,True
 Mavis Staples,Mavis Staples,Nascita,1939-07-10,False
@@ -138,7 +142,7 @@ Paddy McAloon,Paddy McAloon,Nascita,1957-06-07,False
 Paolo Conte,Paolo Conte,Nascita,1937-01-06,False
 Pat Metheny,Pat Metheny,Nascita,1954-08-12,False
 Patti Smith,Patti Smith,Nascita,1946-12-30,False
-Paul Buchanan,Paul Buchanan,Nascita,1949-01-28,False
+Paul Buchanan,Paul Buchanan,Nascita,1956-04-16,False
 Paul McCartney,Paul McCartney,Nascita,1942-06-18,False
 Paul Simon,Paul Simon,Nascita,1941-10-13,False
 Paul Weller,Paul Weller,Nascita,1958-05-25,False
@@ -149,9 +153,12 @@ Phil Collins,Phil Collins,Nascita,1951-01-30,False
 Pier Luigi Andreoni,Pier Luigi Andreoni,Nascita,1955-11-17,False
 Pino Daniele,Pino Daniele,Nascita,1955-03-19,True
 Pino Daniele,Pino Daniele,Morte,2015-01-04,True
+Prince,Prince,Nascita,1958-06-07,True
+Prince,Prince,Morte,2016-04-21,True
 Quincy Jones,Quincy Jones,Nascita,1933-03-14,True
 Quincy Jones,Quincy Jones,Morte,2024-11-03,True
 Rickie Lee Jones,Rickie Lee Jones,Nascita,1954-11-08,False
+Ricky Ross,Ricky Ross,Nascita,1957-12-22,False
 Rob Wasserman,Rob Wasserman,Nascita,1952-04-01,True
 Rob Wasserman,Rob Wasserman,Morte,2016-06-29,True
 Robbie Robertson,Robbie Robertson,Nascita,1943-07-05,True
@@ -179,9 +186,12 @@ Toots Thielemans,Toots Thielemans,Nascita,1922-04-29,True
 Toots Thielemans,Toots Thielemans,Morte,2016-08-22,True
 Tracey Thorn,Tracey Thorn,Nascita,1962-09-26,False
 Van Morrison,Van Morrison,Nascita,1945-08-31,False
-Walter Becker,Walter Becker,Nascita,1956-01-01,False
+Walter Becker,Walter Becker,Nascita,1950-02-20,True
+Walter Becker,Walter Becker,Morte,2017-09-03,True
 Warne Marsh,Warne Marsh,Nascita,1927-10-26,True
 Warne Marsh,Warne Marsh,Morte,1987-12-18,True
 Wayne Krantz,Wayne Krantz,Nascita,1956-07-26,False
+Womack,Womack,Nascita,1947-09-25,True
+Womack,Womack,Morte,2013-02-01,True
 Wynton Marsalis,Wynton Marsalis,Nascita,1961-10-18,False
 Yoko Ono,Yoko Ono,Nascita,1933-02-18,False
