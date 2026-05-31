@@ -544,8 +544,6 @@ Joni Mitchell;Song to a Seagull;19680300;FLAC 44.1kHz 16bit
 Joni Mitchell;Joni's Jazz;20250905;FLAC 192kHz 24bit
 Joni Mitchell and the L.A. Express;Miles of Aisles;19741100;FLAC 192kHz 24bit
 Josee Koning;Doce Presença;20240412;FLAC 48kHz 24bit, FLAC 44.1kHz 24bit
-Kate Bush;The Other Sides;20190322;FLAC 48kHz 24bit
-Kate Bush;The Other Sides [12'' Mixes];20180000;FLAC 48kHz 24bit
 Kate Bush;Before the Dawn;20161125;FLAC 48kHz 24bit
 Kate Bush;50 Words for Snow;20111122;FLAC 44.1kHz 24bit
 Kate Bush;Director's Cut;20110516;FLAC 44.1kHz 24bit
@@ -688,11 +686,20 @@ Niccolò Fabi;La cura del tempo;20030000;FLAC 44.1kHz 16bit
 Niccolò Fabi;Il giardiniere;19970000;FLAC 44.1kHz 16bit
 Niccolò Fabi;Libertà negli occhi;20250516;FLAC 44.1kHz 24bit
 Nick Cave & the Bad Seeds;Wild God;20240830;FLAC 96kHz 24bit
+Nick Drake;Five Leaves Left;19690901;FLAC 96kHz 24bit
+Nick Drake;Bryter Layter;19701101;FLAC 96kHz 24bit
+Nick Drake;Pink Moon;19720225;FLAC 96kHz 24bit
 Nick Mason;Nick Mason's Fictitious Sports;19810000;FLAC 192kHz 24bit
 Nicola Alesini & Pier Luigi Andreoni;Marco Polo;19960322;FLAC 44.1kHz 16bit
 Nine Horses;Money for All;20070116;FLAC 44.1kHz 16bit
 Nine Horses;Snow Borne Sorrow;20051011;FLAC 44.1kHz 16bit
 Omar;Brighter the Days;20250606;FLAC 44.1kHz 24bit
+Omar;There's Nothing Like This;19900000;FLAC 44.1kHz 16bit
+Omar;This Is Not a Love Song;19970804;FLAC 44.1kHz 16bit
+Omar;Sing (If You Want It);20060425;FLAC 44.1kHz 16bit
+Omar;Love in Beats;20170127;FLAC 44.1kHz 16bit
+Omar;For Pleasure;19940721;FLAC 44.1kHz 16bit
+Omar;The Man;20130624;FLAC 44.1kHz 16bit
 OndaRock;Blah Blah Blah;20210000;MP3 44.1kHz
 OndaRock;Rock In Onda;20210000;MP3 44.1kHz
 Paddy McAloon;I Trawl the Megahertz;20030527;FLAC 44.1kHz 24bit
@@ -1203,5 +1210,5 @@ Yusuf;Tell 'Em I'm Gone;20141027;FLAC 44.1kHz 16bit
 Yusuf;An Other Cup;20061114;FLAC 44.1kHz 16bit
 Yusuf/Cat Stevens;King of a Land;20230616;FLAC 44.1kHz 24bit
 ;;;
-;1203;;
+;1210;;
 ;;;
