@@ -647,3 +647,13 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Remote: Major to Minor - Hue and Cry (2015)
   🎵 MATCH TROVATO: 22 Dreams - Paul Weller (2008)
   🎵 MATCH TROVATO: Peter Gabriel [2] - Peter Gabriel (1978)
+[main b84b3c6] Roon Almanac Update 2026-06-03
+ 4 files changed, 301 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (78%)
+To github.com:Burroughs7005/music-almanac.git
+   077a0d2..b84b3c6  main -> main
+[2026-06-03 05:00:01.906880] Scansione RoonBuddy per il 03/06...
+  🎵 MATCH TROVATO: Autumn in the Neighbourhood - China Crisis (2015)
+  🎵 MATCH TROVATO: Water Sign - Chris Rea (1983)
+  🎵 MATCH TROVATO: Fellow Hoodlums - Deacon Blue (1991)
+  🎵 MATCH TROVATO: Stranger to Stranger - Paul Simon (2016)
