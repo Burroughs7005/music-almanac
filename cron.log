@@ -666,3 +666,12 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Born in the U.S.A. - Bruce Springsteen (1984)
   🎵 MATCH TROVATO: Eden (2026 Deluxe Edition) - Everything But the Girl (1984)
   🎵 MATCH TROVATO: Vai mo' - Pino Daniele (1981)
+[main f5ecd01] Roon Almanac Update 2026-06-05
+ 4 files changed, 298 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (74%)
+To github.com:Burroughs7005/music-almanac.git
+   65153a9..f5ecd01  main -> main
+[2026-06-05 05:00:01.944933] Scansione RoonBuddy per il 05/06...
+  🎵 MATCH TROVATO: Live in Dublin - Bruce Springsteen with the Sessions Band (2007)
+  🎵 MATCH TROVATO: Flowers in the Dirt - Paul McCartney (1989)
+  🎵 MATCH TROVATO: Passion: Music for The Last Temptation of Christ - Peter Gabriel (1989)

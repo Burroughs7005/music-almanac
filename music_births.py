@@ -21,7 +21,6 @@ EMAIL_PASS = os.environ.get("ROON_ALMANAC_PASS", "kxzrstdkuqcgfccg")
 def clean_and_split_artists(artist_string):
     if not isinstance(artist_string, str):
         return []
-    # Splitta in modo pulito su congiunzioni e slash
     raw_names = re.split(r'\s+&\s+|\s+/\s+|\s+and\s+|\s+with\s+|\s+feat\.\s+|/', artist_string, flags=re.IGNORECASE)
     cleaned = []
     for name in raw_names:
@@ -31,7 +30,7 @@ def clean_and_split_artists(artist_string):
     return cleaned
 
 def fetch_wikidata_api(artist_name):
-    """Cerca l'artista usando l'API nativa di Wikidata con filtro anti-omonimia per musicisti"""
+    """Cerca l'artista usando l'API nativa di Wikidata con filtro anti-omonimia e recupero genere"""
     search_url = "https://www.wikidata.org/w/api.php"
     headers = {'User-Agent': 'RoonAlmanacBuddy/3.0 (andrea.lutri@gmail.com)'}
     events = []
@@ -41,7 +40,7 @@ def fetch_wikidata_api(artist_name):
             'search': artist_name,
             'language': 'en',
             'format': 'json',
-            'limit': 5  # Più candidati per scovare il musicista se nascosto sotto un omonimo
+            'limit': 5
         }
         r_search = requests.get(search_url, params=search_params, headers=headers, timeout=10)
         if r_search.status_code != 200:
@@ -56,22 +55,18 @@ def fetch_wikidata_api(artist_name):
         if not results:
             return events
 
-        # LOGICA ANTI-OMONIMIA: Cerchiamo il candidato che appartenga al mondo della musica
         entity_id = None
         parole_chiave_musica = ['music', 'musician', 'composer', 'singer', 'band', 'jazz', 'pianist', 'guitarist', 'producer', 'rock', 'pop']
         parole_chiave_escludi = ['actor', 'actress', 'footballer', 'politician', 'player', 'film', 'movie']
 
-        # 1. Tentativo: Cerca qualcuno che abbia una descrizione esplicitamente musicale
         for cand in results:
             desc = cand.get('description', '').lower()
             label = cand.get('label', '').lower()
-            
             if label == artist_name.lower() or cand.get('match', {}).get('text', '').lower() == artist_name.lower():
                 if any(kw in desc for kw in parole_chiave_musica):
                     entity_id = cand['id']
                     break
 
-        # 2. Tentativo: Se mancano parole chiave musicali, prendiamo il primo che NON sia un attore/sportivo esplicito
         if not entity_id:
             for cand in results:
                 desc = cand.get('description', '').lower()
@@ -81,7 +76,6 @@ def fetch_wikidata_api(artist_name):
                         entity_id = cand['id']
                         break
 
-        # 3. Fallback: Se tutti i filtri falliscono, prendiamo il primo risultato
         if not entity_id:
             entity_id = results[0]['id']
 
@@ -98,21 +92,46 @@ def fetch_wikidata_api(artist_name):
         claims = r_entity.json().get('entities', {}).get(entity_id, {}).get('claims', {})
         birth_claims = claims.get('P569', [])
         death_claims = claims.get('P570', [])
+        gender_claims = claims.get('P21', [])
+        
         is_dead = len(death_claims) > 0
         
+        # Mappatura del genere (P21)
+        gender = 'unknown'
+        if gender_claims:
+            g_id = gender_claims[0].get('mainsnak', {}).get('datavalue', {}).get('value', {}).get('id', '')
+            if g_id == 'Q6581097':   # male
+                gender = 'male'
+            elif g_id == 'Q6581072': # female
+                gender = 'female'
+
         if birth_claims:
             b_time = birth_claims[0].get('mainsnak', {}).get('datavalue', {}).get('value', {}).get('time', '')
             if b_time:
                 b_date = b_time.lstrip('+').split('T')[0]
                 if re.match(r'^\d{4}-\d{2}-\d{2}$', b_date) and not b_date.startswith('0000'):
-                    events.append({'artist_key': artist_name, 'subject': artist_name, 'type': 'Nascita', 'date': b_date, 'is_dead': is_dead})
+                    events.append({
+                        'artist_key': artist_name, 
+                        'subject': artist_name, 
+                        'type': 'Nascita', 
+                        'date': b_date, 
+                        'is_dead': is_dead,
+                        'gender': gender
+                    })
                     
         if death_claims:
             d_time = death_claims[0].get('mainsnak', {}).get('datavalue', {}).get('value', {}).get('time', '')
             if d_time:
                 d_date = d_time.lstrip('+').split('T')[0]
                 if re.match(r'^\d{4}-\d{2}-\d{2}$', d_date) and not d_date.startswith('0000'):
-                    events.append({'artist_key': artist_name, 'subject': artist_name, 'type': 'Morte', 'date': d_date, 'is_dead': is_dead})
+                    events.append({
+                        'artist_key': artist_name, 
+                        'subject': artist_name, 
+                        'type': 'Morte', 
+                        'date': d_date, 
+                        'is_dead': is_dead,
+                        'gender': gender
+                    })
     except Exception as e:
         pass
     return events
@@ -121,7 +140,7 @@ def build_cache():
     if not os.path.exists(INPUT_CSV):
         print(f"Errore: Il file {INPUT_CSV} non esiste.", file=sys.stderr)
         return
-    print("Inizio scansione atomica della libreria RoonBuddy con Wikidata API...")
+    print("Inizio scansione della libreria RoonBuddy con Wikidata API...")
     try:
         df_roon = pd.read_csv(INPUT_CSV, sep=None, engine='python')
         artist_col = [col for col in df_roon.columns if 'artist' in col.lower()][0]
@@ -144,7 +163,7 @@ def build_cache():
         
     if all_events:
         pd.DataFrame(all_events).to_csv(CACHE_CSV, index=False)
-        print(f"\nCache rigenerata via Wikidata API ({len(all_events)} eventi salvati).")
+        print(f"\nCache rigenerata con supporto genere ({len(all_events)} eventi salvati).")
     else:
         print("\nNessun dato biografico trovato.")
 
@@ -168,14 +187,14 @@ def run_daily_almanac():
                 'type': row['type'],
                 'anno': anno_evento,
                 'delta': anno_corrente - anno_evento,
-                'is_dead': str(row.get('is_dead', 'False')).lower() == 'true'
+                'is_dead': str(row.get('is_dead', 'False')).lower() == 'true',
+                'gender': str(row.get('gender', 'unknown')).lower()
             })
 
     if not ricorrenze_oggi:
         print("Nessun anniversario musicale valido trovato per oggi.")
         return
 
-    # Divisione rigorosa in tre categorie distinte
     compleanni = [r for r in ricorrenze_oggi if r['type'] == 'Nascita' and not r['is_dead']]
     nascite_ricorrenze = [r for r in ricorrenze_oggi if r['type'] == 'Nascita' and r['is_dead']]
     scomparse = [r for r in ricorrenze_oggi if r['type'] == 'Morte']
@@ -213,20 +232,37 @@ def run_daily_almanac():
         html_content += "<div class='section-title title-birthday'>🎂 Festeggiano Oggi</div>"
         for n in compleanni:
             badge = "<span class='badge-centenario'>✨ CENTENARIO</span>" if n['delta'] == 100 else ""
-            html_content += f"<div class='event-card card-birthday'><div class='artist-name'>{n['subject']}{badge}</div><div class='event-details'>Compie <strong>{n['delta']} anni</strong> (nato nel {n['anno']})</div></div>"
+            
+            # Declinazione genere
+            nato_text = "nata" if n['gender'] == 'female' else "nato"
+            if n['gender'] == 'unknown': # Spesso band o entità collettive
+                nato_text = "nati"
+
+            html_content += f"<div class='event-card card-birthday'><div class='artist-name'>{n['subject']}{badge}</div><div class='event-details'>Compie <strong>{n['delta']} anni</strong> ({nato_text} nel {n['anno']})</div></div>"
 
     # SEZIONE 2: RICORRENZE NASCITA (ARTISTI SCOMPARSI)
     if nascite_ricorrenze:
         html_content += "<div class='section-title title-memory'>🕯️ Ricorrenze della Nascita</div>"
         for n in nascite_ricorrenze:
             badge = "<span class='badge-centenario'>✨ CENTENARIO</span>" if n['delta'] == 100 else ""
-            html_content += f"<div class='event-card card-memory'><div class='artist-name'>{n['subject']}{badge}</div><div class='event-details'>Avrebbe compiuto <strong>{n['delta']} anni</strong> (nato nel {n['anno']})</div></div>"
+            
+            compie_text = "Avrebbe compiuto"
+            nato_text = "nata" if n['gender'] == 'female' else "nato"
+            if n['gender'] == 'unknown':
+                compie_text = "Avrebbero compiuto"
+                nato_text = "nati"
+
+            html_content += f"<div class='event-card card-memory'><div class='artist-name'>{n['subject']}{badge}</div><div class='event-details'>{compie_text} <strong>{n['delta']} anni</strong> ({nato_text} nel {n['anno']})</div></div>"
 
     # SEZIONE 3: ANNIVERSARI SCOMPARSA
     if scomparse:
         html_content += "<div class='section-title title-death'>🖤 Anniversari della Scomparsa</div>"
         for m in scomparse:
-            html_content += f"<div class='event-card card-death'><div class='artist-name'>{m['subject']}</div><div class='event-details'>Scomparso nel <strong>{m['anno']}</strong> — {m['delta']} anni fa</div></div>"
+            scomparso_text = "Scomparsa" if m['gender'] == 'female' else "Scomparso"
+            if m['gender'] == 'unknown':
+                scomparso_text = "Scomparsi"
+                
+            html_content += f"<div class='event-card card-death'><div class='artist-name'>{m['subject']}</div><div class='event-details'>{scomparso_text} nel <strong>{m['anno']}</strong> — {m['delta']} anni fa</div></div>"
 
     html_content += "</div><div class='footer'>Generato da glasgy.pi • RoonBuddy Almanac Project</div></div></body></html>"
 
