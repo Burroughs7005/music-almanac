@@ -675,3 +675,16 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Live in Dublin - Bruce Springsteen with the Sessions Band (2007)
   🎵 MATCH TROVATO: Flowers in the Dirt - Paul McCartney (1989)
   🎵 MATCH TROVATO: Passion: Music for The Last Temptation of Christ - Peter Gabriel (1989)
+[main 302064a] Roon Almanac Update 2026-06-06
+ 7 files changed, 551 insertions(+), 216 deletions(-)
+ rewrite artists_bio_cache.csv (96%)
+ rewrite music_history.xml (76%)
+To github.com:Burroughs7005/music-almanac.git
+   f5ecd01..302064a  main -> main
+[2026-06-06 05:00:01.987477] Scansione RoonBuddy per il 06/06...
+  🎵 MATCH TROVATO: Luminal - Beatie Wolfe & Brian Eno (2025)
+  🎵 MATCH TROVATO: Brighter the Days - Omar (2025)
+  🎵 MATCH TROVATO: Plays Live - Peter Gabriel (1983)
+  🎵 MATCH TROVATO: More. - Pulp (2025)
+  🎵 MATCH TROVATO: Provision - Scritti Politti (1988)
+  🎵 MATCH TROVATO: Walk This Road - The Doobie Brothers (2025)

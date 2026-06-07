@@ -21,10 +21,15 @@ EMAIL_PASS = os.environ.get("ROON_ALMANAC_PASS", "kxzrstdkuqcgfccg")
 def clean_and_split_artists(artist_string):
     if not isinstance(artist_string, str):
         return []
+    # Splitta in modo pulito su congiunzioni e slash
     raw_names = re.split(r'\s+&\s+|\s+/\s+|\s+and\s+|\s+with\s+|\s+feat\.\s+|/', artist_string, flags=re.IGNORECASE)
     cleaned = []
     for name in raw_names:
-        name_clean = name.strip()
+        # Rimuove i punti usati nelle iniziali (es. "C." -> "C ") per evitare duplicati da punteggiatura
+        name_clean = name.replace('.', ' ')
+        # Normalizza gli spazi multipli in uno spazio singolo
+        name_clean = re.sub(r'\s+', ' ', name_clean).strip()
+        
         if name_clean and len(name_clean) > 1:
             cleaned.append(name_clean)
     return cleaned
@@ -140,7 +145,7 @@ def build_cache():
     if not os.path.exists(INPUT_CSV):
         print(f"Errore: Il file {INPUT_CSV} non esiste.", file=sys.stderr)
         return
-    print("Inizio scansione della libreria RoonBuddy con Wikidata API...")
+    print("Inizio scansione atomica della libreria RoonBuddy con Wikidata API...")
     try:
         df_roon = pd.read_csv(INPUT_CSV, sep=None, engine='python')
         artist_col = [col for col in df_roon.columns if 'artist' in col.lower()][0]
@@ -163,7 +168,7 @@ def build_cache():
         
     if all_events:
         pd.DataFrame(all_events).to_csv(CACHE_CSV, index=False)
-        print(f"\nCache rigenerata con supporto genere ({len(all_events)} eventi salvati).")
+        print(f"\nCache rigenerata con de-duplicazione punteggiatura ({len(all_events)} eventi salvati).")
     else:
         print("\nNessun dato biografico trovato.")
 
@@ -194,6 +199,10 @@ def run_daily_almanac():
     if not ricorrenze_oggi:
         print("Nessun anniversario musicale valido trovato per oggi.")
         return
+
+    # De-duplicazione finale sugli eventi del giorno (sicurezza per la cache esistente)
+    df_oggi = pd.DataFrame(ricorrenze_oggi).drop_duplicates(subset=['subject', 'type', 'anno'])
+    ricorrenze_oggi = df_oggi.to_dict(orient='records')
 
     compleanni = [r for r in ricorrenze_oggi if r['type'] == 'Nascita' and not r['is_dead']]
     nascite_ricorrenze = [r for r in ricorrenze_oggi if r['type'] == 'Nascita' and r['is_dead']]
@@ -232,12 +241,9 @@ def run_daily_almanac():
         html_content += "<div class='section-title title-birthday'>🎂 Festeggiano Oggi</div>"
         for n in compleanni:
             badge = "<span class='badge-centenario'>✨ CENTENARIO</span>" if n['delta'] == 100 else ""
-            
-            # Declinazione genere
             nato_text = "nata" if n['gender'] == 'female' else "nato"
-            if n['gender'] == 'unknown': # Spesso band o entità collettive
+            if n['gender'] == 'unknown':
                 nato_text = "nati"
-
             html_content += f"<div class='event-card card-birthday'><div class='artist-name'>{n['subject']}{badge}</div><div class='event-details'>Compie <strong>{n['delta']} anni</strong> ({nato_text} nel {n['anno']})</div></div>"
 
     # SEZIONE 2: RICORRENZE NASCITA (ARTISTI SCOMPARSI)
@@ -245,13 +251,11 @@ def run_daily_almanac():
         html_content += "<div class='section-title title-memory'>🕯️ Ricorrenze della Nascita</div>"
         for n in nascite_ricorrenze:
             badge = "<span class='badge-centenario'>✨ CENTENARIO</span>" if n['delta'] == 100 else ""
-            
             compie_text = "Avrebbe compiuto"
             nato_text = "nata" if n['gender'] == 'female' else "nato"
             if n['gender'] == 'unknown':
                 compie_text = "Avrebbero compiuto"
                 nato_text = "nati"
-
             html_content += f"<div class='event-card card-memory'><div class='artist-name'>{n['subject']}{badge}</div><div class='event-details'>{compie_text} <strong>{n['delta']} anni</strong> ({nato_text} nel {n['anno']})</div></div>"
 
     # SEZIONE 3: ANNIVERSARI SCOMPARSA
@@ -261,7 +265,6 @@ def run_daily_almanac():
             scomparso_text = "Scomparsa" if m['gender'] == 'female' else "Scomparso"
             if m['gender'] == 'unknown':
                 scomparso_text = "Scomparsi"
-                
             html_content += f"<div class='event-card card-death'><div class='artist-name'>{m['subject']}</div><div class='event-details'>{scomparso_text} nel <strong>{m['anno']}</strong> — {m['delta']} anni fa</div></div>"
 
     html_content += "</div><div class='footer'>Generato da glasgy.pi • RoonBuddy Almanac Project</div></div></body></html>"
