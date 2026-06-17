@@ -766,3 +766,13 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-06-15 05:00:01.502556] Scansione RoonBuddy per il 15/06...
   🎵 MATCH TROVATO: This Time - Al Jarreau (1980)
   🎵 MATCH TROVATO: On the Cobbles - John Martyn (2004)
+[main 56492d1] Roon Almanac Update 2026-06-16
+ 4 files changed, 298 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (65%)
+To github.com:Burroughs7005/music-almanac.git
+   3302554..56492d1  main -> main
+[2026-06-16 05:00:01.723469] Scansione RoonBuddy per il 16/06...
+  🎵 MATCH TROVATO: The Rise and Fall of Ziggy Stardust and the Spiders From Mars - David Bowie (1972)
+  🎵 MATCH TROVATO: Dream Box - Pat Metheny (2023)
+  🎵 MATCH TROVATO: The Queen Is Dead - The Smiths (1986)
+  🎵 MATCH TROVATO: King of a Land - Yusuf/Cat Stevens (2023)
