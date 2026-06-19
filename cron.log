@@ -784,3 +784,13 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-06-17 05:00:02.256717] Scansione RoonBuddy per il 17/06...
   🎵 MATCH TROVATO: Sweet Revenge - Ryuichi Sakamoto (1994)
   🎵 MATCH TROVATO: Synchronicity - The Police (1983)
+[main 17d043b] Roon Almanac Update 2026-06-18
+ 5 files changed, 299 insertions(+), 3 deletions(-)
+ rewrite music_history.xml (65%)
+To github.com:Burroughs7005/music-almanac.git
+   c9bfbe2..17d043b  main -> main
+[2026-06-18 05:00:02.160061] Scansione RoonBuddy per il 18/06...
+  🎵 MATCH TROVATO: Goodbye Cruel World - Elvis Costello & the Attractions (1984)
+  🎵 MATCH TROVATO: State Theater New Jersey 2005 - Joe Jackson, Todd Rundgren & Ethel (2021)
+  🎵 MATCH TROVATO: Beat - King Crimson (1982)
+  🎵 MATCH TROVATO: Damage - Sylvian/Fripp (2002)
