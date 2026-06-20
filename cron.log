@@ -794,3 +794,12 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: State Theater New Jersey 2005 - Joe Jackson, Todd Rundgren & Ethel (2021)
   🎵 MATCH TROVATO: Beat - King Crimson (1982)
   🎵 MATCH TROVATO: Damage - Sylvian/Fripp (2002)
+[main 052e8a2] Roon Almanac Update 2026-06-19
+ 5 files changed, 300 insertions(+), 3 deletions(-)
+ rewrite music_history.xml (78%)
+To github.com:Burroughs7005/music-almanac.git
+   17d043b..052e8a2  main -> main
+[2026-06-19 05:00:01.586867] Scansione RoonBuddy per il 19/06...
+  🎵 MATCH TROVATO: Next Move - Hue and Cry (2000)
+  🎵 MATCH TROVATO: Protest Songs - Prefab Sprout (1989)
+  🎵 MATCH TROVATO: Separations - Pulp (1992)
