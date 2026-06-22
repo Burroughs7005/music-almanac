@@ -86,6 +86,7 @@ Bob Dylan;Oh Mercy;19890912;FLAC 96kHz 24bit
 Bob Dylan;Blood on the Tracks;19750120;FLAC 96kHz 24bit
 Bob Dylan;Blonde on Blonde;19660516;FLAC 96kHz 24bit
 Bob Dylan;Highway 61 Revisited;19650830;FLAC 96kHz 24bit
+Bobby McFerrin;Bobby McFerrin;19820500;FLAC 44.1kHz 16bit
 Boz Scaggs;Hits!;19801101;FLAC 44.1kHz 16bit
 Brian Eno;FOREVERANDEVERNOMORE;20221014;FLAC 44.1kHz 24bit
 Brian Eno;The Shutov Assembly (Expanded Edition);19921110;FLAC 44.1kHz 16bit
@@ -173,6 +174,7 @@ Curt Smith;Soul on Board;19930500;FLAC 44.1kHz 24bit
 Dalla/Morandi;Dalla/Morandi;19880000;FLAC 44.1kHz 16bit
 Daniel Lanois;For the Beauty of Wynona;19930323;FLAC 44.1kHz 16bit
 Daniel Lanois;Acadie;19890926;FLAC 44.1kHz 16bit
+Daniel Lanois;Belladonna Nocturne;20260619;FLAC 48kHz 24bit
 Danny Wilson;Bebop Moptop;19890717;FLAC 44.1kHz 16bit
 Danny Wilson;Meet Danny Wilson;19870406;FLAC 44.1kHz 16bit
 Daryl Hall;Sacred Songs;19800000;FLAC 44.1kHz 16bit
@@ -411,6 +413,7 @@ Gerry Rafferty;Rest in Blue;20210903;FLAC 44.1kHz 16bit
 Gerry Rafferty;Night Owl;19790600;FLAC 44.1kHz 16bit
 Gil Evans Orchestra;Gil Evans Orchestra (Live at Umbria Jazz), Vol. II;20181207;FLAC 44.1kHz 16bit
 Gil Evans Orchestra;Live at Umbria Jazz, Vol. 1;20010102;FLAC 44.1kHz 16bit
+Haircut One Hundred;Boxing the Compass;20260619;FLAC 44.1kHz 16bit
 Hall & Oates;Change of Season;19900000;FLAC 44.1kHz 16bit
 Hall & Oates;Ooh Yeah!;19880000;FLAC 44.1kHz 16bit
 Hall & Oates;Live at the Apollo with David Ruffin and Eddie Kendricks;19850000;FLAC 44.1kHz 16bit
@@ -539,13 +542,14 @@ Joni Mitchell;Hejira;19761122;FLAC 192kHz 24bit
 Joni Mitchell;The Hissing of Summer Lawns;19751100;FLAC 192kHz 24bit
 Joni Mitchell;Court and Spark;19740100;FLAC 192kHz 24bit
 Joni Mitchell;For the Roses;19721100;FLAC 192kHz 24bit
-Joni Mitchell;Blue;19710630;FLAC 192kHz 24bit
+Joni Mitchell;Blue;19710622;FLAC 192kHz 24bit
 Joni Mitchell;Ladies of the Canyon;19700302;FLAC 192kHz 24bit
 Joni Mitchell;Clouds;19690500;FLAC 44.1kHz 16bit
 Joni Mitchell;Song to a Seagull;19680300;FLAC 44.1kHz 16bit
 Joni Mitchell;Joni's Jazz;20250905;FLAC 192kHz 24bit
 Joni Mitchell and the L.A. Express;Miles of Aisles;19741100;FLAC 192kHz 24bit
 Josee Koning;Doce Presença;20240412;FLAC 48kHz 24bit, FLAC 44.1kHz 24bit
+Julian Lennon;Valotte;19841015;FLAC 44.1kHz 16bit
 Kate Bush;Before the Dawn;20161125;FLAC 48kHz 24bit
 Kate Bush;50 Words for Snow;20111122;FLAC 44.1kHz 24bit
 Kate Bush;Director's Cut;20110516;FLAC 44.1kHz 24bit
@@ -597,6 +601,7 @@ Lucio Battisti;La sposa occidentale;19901016;FLAC 44.1kHz 24bit
 Lucio Battisti;L'apparenza;19880000;FLAC 44.1kHz 24bit
 Lucio Battisti;Don Giovanni;19860325;FLAC 44.1kHz 24bit
 Lucio Battisti;Una giornata uggiosa;19800204;FLAC 192kHz 24bit
+Lucio Battisti;E già;19820914;FLAC 48kHz 24bit
 Lucio Corsi;Volevo essere un duro;20250321;FLAC 44.1kHz 24bit
 Lucio Dalla;Cambio;19900911;FLAC 44.1kHz 16bit
 Lucio Dalla;Viaggi organizzati;19840000;FLAC 44.1kHz 16bit
@@ -693,6 +698,7 @@ Nick Drake;Bryter Layter;19701101;FLAC 96kHz 24bit
 Nick Drake;Pink Moon;19720225;FLAC 96kHz 24bit
 Nick Mason;Nick Mason's Fictitious Sports;19810000;FLAC 192kHz 24bit
 Nicola Alesini & Pier Luigi Andreoni;Marco Polo;19960322;FLAC 44.1kHz 16bit
+Nicola Conte;Umoja;20230630;FLAC 48kHz 24bit
 Nine Horses;Money for All;20070116;FLAC 44.1kHz 16bit
 Nine Horses;Snow Borne Sorrow;20051011;FLAC 44.1kHz 16bit
 Omar;Brighter the Days;20250606;FLAC 44.1kHz 24bit
@@ -1225,5 +1231,5 @@ Yusuf;Tell 'Em I'm Gone;20141027;FLAC 44.1kHz 16bit
 Yusuf;An Other Cup;20061114;FLAC 44.1kHz 16bit
 Yusuf/Cat Stevens;King of a Land;20230616;FLAC 44.1kHz 24bit
 ;;;
-;1225;;
+;1231;;
 ;;;
