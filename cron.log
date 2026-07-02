@@ -897,3 +897,10 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-07-01 05:00:01.543139] Scansione RoonBuddy per il 01/07...
   🎵 MATCH TROVATO: Pithecanthropus Erectus - Charles Mingus (1956)
   🎵 MATCH TROVATO: Vocalese - The Manhattan Transfer (1985)
+[main ba4a260] Roon Almanac Update 2026-07-02
+ 5 files changed, 301 insertions(+), 3 deletions(-)
+ rewrite music_history.xml (66%)
+To github.com:Burroughs7005/music-almanac.git
+   4ab0f05..ba4a260  main -> main
+[2026-07-02 05:00:01.682646] Scansione RoonBuddy per il 02/07...
+  🎵 MATCH TROVATO: Imperial Bedroom - Elvis Costello & the Attractions (1982)
