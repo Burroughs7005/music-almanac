@@ -911,3 +911,12 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-07-03 05:00:01.523439] Scansione RoonBuddy per il 03/07...
   🎵 MATCH TROVATO: Compositions - Anita Baker (1990)
   🎵 MATCH TROVATO: On Sunset - Paul Weller (2020)
+[main 8f94f3b] Roon Almanac Update 2026-07-04
+ 6 files changed, 16734 insertions(+), 3 deletions(-)
+ create mode 100644 RoonTracks.csv
+ rewrite music_history.xml (65%)
+To github.com:Burroughs7005/music-almanac.git
+   a77910b..8f94f3b  main -> main
+[2026-07-04 05:00:01.682926] Scansione RoonBuddy per il 04/07...
+  🎵 MATCH TROVATO: Ben Folds Live with the National Symphony Orchestra - Ben Folds (2025)
+  🎵 MATCH TROVATO: Tennis - Chris Rea (1980)
