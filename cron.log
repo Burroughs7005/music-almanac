@@ -997,3 +997,10 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-07-17 05:00:02.364177] Scansione RoonBuddy per il 17/07...
   🎵 MATCH TROVATO: Bebop Moptop - Danny Wilson (1989)
   🎵 MATCH TROVATO: Beauty & Crime - Suzanne Vega (2007)
+[main 44d2b6f] Roon Almanac Update 2026-07-18
+ 5 files changed, 299 insertions(+), 3 deletions(-)
+ rewrite music_history.xml (66%)
+To github.com:Burroughs7005/music-almanac.git
+   7e7a372..44d2b6f  main -> main
+[2026-07-18 05:00:01.507599] Scansione RoonBuddy per il 18/07...
+  🎵 MATCH TROVATO: Wired to the Moon - Chris Rea (1984)
