@@ -1052,3 +1052,10 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-07-25 05:00:01.463745] Scansione RoonBuddy per il 25/07...
   🎵 MATCH TROVATO: Debussy: Préludes, Book 1 - Arturo Benedetti Michelangeli (1984)
   🎵 MATCH TROVATO: Find El Dorado - Paul Weller (2025)
+[main 4c478bb] Roon Almanac Update 2026-07-26
+ 5 files changed, 299 insertions(+), 3 deletions(-)
+ rewrite music_history.xml (68%)
+To github.com:Burroughs7005/music-almanac.git
+   c47c599..4c478bb  main -> main
+[2026-07-26 05:00:02.177759] Scansione RoonBuddy per il 26/07...
+  🎵 MATCH TROVATO: MoonDial - Pat Metheny (2024)
