@@ -1081,3 +1081,11 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-07-29 05:00:01.513019] Scansione RoonBuddy per il 29/07...
   🎵 MATCH TROVATO: And. - John Martyn (1996)
   🎵 MATCH TROVATO: Live at WOMAD 1982 - Various Artists (2022)
+[main 7865f5c] Roon Almanac Update 2026-07-30
+ 4 files changed, 300 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (65%)
+To github.com:Burroughs7005/music-almanac.git
+   f47572f..7865f5c  main -> main
+[2026-07-30 05:00:02.166225] Scansione RoonBuddy per il 30/07...
+  🎵 MATCH TROVATO: The Rising - Bruce Springsteen (2002)
+  🎵 MATCH TROVATO: In a Silent Way - Miles Davis (1969)
