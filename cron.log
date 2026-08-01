@@ -1089,3 +1089,9 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-07-30 05:00:02.166225] Scansione RoonBuddy per il 30/07...
   🎵 MATCH TROVATO: The Rising - Bruce Springsteen (2002)
   🎵 MATCH TROVATO: In a Silent Way - Miles Davis (1969)
+[main bd8143a] Roon Almanac Update 2026-07-31
+ 4 files changed, 299 insertions(+), 3 deletions(-)
+ rewrite music_history.xml (66%)
+To github.com:Burroughs7005/music-almanac.git
+   7865f5c..bd8143a  main -> main
+[2026-07-31 05:00:01.436894] Scansione RoonBuddy per il 31/07...
