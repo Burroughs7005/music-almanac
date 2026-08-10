@@ -9,29 +9,14 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-# 1. Definizione percorsi base
 BASE_DIR = "/home/pi/music-almanac"
 INPUT_CSV = os.path.join(BASE_DIR, "RoonBuddy.csv")
 CACHE_CSV = os.path.join(BASE_DIR, "artists_bio_cache.csv")
 
-# 2. Caricamento variabili d'ambiente dal file .env
-ENV_FILE = os.path.join(BASE_DIR, ".env")
-if os.path.exists(ENV_FILE):
-    with open(ENV_FILE) as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith('#') and '=' in line:
-                key, val = line.split('=', 1)
-                os.environ[key.strip()] = val.strip().strip('"\'')
-
-# 3. Configurazione SMTP senza password in chiaro
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 465
 EMAIL_USER = "andrea.lutri@gmail.com"
-EMAIL_PASS = os.environ.get("ROON_ALMANAC_PASS")
-
-if not EMAIL_PASS:
-    sys.exit("Errore: La variabile ROON_ALMANAC_PASS non è impostata nel file .env o nell'ambiente.")
+EMAIL_PASS = os.environ.get("ROON_ALMANAC_PASS", "kxzrstdkuqcgfccg")
 
 def clean_and_split_artists(artist_string):
     if not isinstance(artist_string, str):
