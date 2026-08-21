@@ -1228,3 +1228,10 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-08-19 05:00:02.266133] Scansione RoonBuddy per il 19/08...
   🎵 MATCH TROVATO: Dal Vivo Volume 2 - Carte da decifrare - Ivano Fossati (1994)
   🎵 MATCH TROVATO: Short Stories Vol. 2 - Ricky Ross (2022)
+[main 31071eb] Roon Almanac Update 2026-08-20
+ 3 files changed, 10 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (68%)
+To github.com:Burroughs7005/music-almanac.git
+   5f00c9d..31071eb  main -> main
+[2026-08-20 05:00:02.472666] Scansione RoonBuddy per il 20/08...
+  🎵 MATCH TROVATO: Fleurs 3 - Franco Battiato (2002)
