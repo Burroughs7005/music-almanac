@@ -1242,3 +1242,10 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-08-21 05:00:02.429009] Scansione RoonBuddy per il 21/08...
   🎵 MATCH TROVATO: Graffiti Bridge - Prince (1990)
   🎵 MATCH TROVATO: Good Luck, Seeker - The Waterboys (2020)
+[main c33cda7] Roon Almanac Update 2026-08-22
+ 4 files changed, 11 insertions(+), 3 deletions(-)
+ rewrite music_history.xml (65%)
+To github.com:Burroughs7005/music-almanac.git
+   6f76bca..c33cda7  main -> main
+[2026-08-22 05:00:02.572062] Scansione RoonBuddy per il 22/08...
+  🎵 MATCH TROVATO: B'Boom: Official Bootleg - Live in Argentina - King Crimson (1995)
