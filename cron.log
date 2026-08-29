@@ -1282,3 +1282,11 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-08-27 05:00:02.233477] Scansione RoonBuddy per il 27/08...
   🎵 MATCH TROVATO: No Code - Pearl Jam (1996)
   🎵 MATCH TROVATO: Ten - Pearl Jam (1991)
+[main 093c046] Roon Almanac Update 2026-08-28
+ 3 files changed, 11 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (64%)
+To github.com:Burroughs7005/music-almanac.git
+   551feca..093c046  main -> main
+[2026-08-28 05:00:01.490299] Scansione RoonBuddy per il 28/08...
+  🎵 MATCH TROVATO: Jordan: The Comeback - Prefab Sprout (1990)
+  🎵 MATCH TROVATO: The Woman in Red [Original Soundtrack] - Stevie Wonder (1984)
