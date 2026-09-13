@@ -1417,3 +1417,12 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: The Wild, the Innocent and the E Street Shuffle - Bruce Springsteen (1973)
   🎵 MATCH TROVATO: Cambio - Lucio Dalla (1990)
   🎵 MATCH TROVATO: An Evening of New York Songs and Stories - Suzanne Vega (2020)
+[main 42c339f] Roon Almanac Update 2026-09-12
+ 4 files changed, 15 insertions(+), 3 deletions(-)
+ rewrite music_history.xml (72%)
+To github.com:Burroughs7005/music-almanac.git
+   a8d5087..42c339f  main -> main
+[2026-09-12 05:00:02.401168] Scansione RoonBuddy per il 12/09...
+  🎵 MATCH TROVATO: Oh Mercy - Bob Dylan (1989)
+  🎵 MATCH TROVATO: 2nd Wind - Todd Rundgren (1991)
+  🎵 MATCH TROVATO: Black Sea - XTC (1980)
