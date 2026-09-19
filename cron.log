@@ -1490,3 +1490,12 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Truth Serum - Garland Jeffreys (2013)
   🎵 MATCH TROVATO: Nuvola Numero Nove - Samuele Bersani (2013)
   🎵 MATCH TROVATO: Room to Roam - The Waterboys (1990)
+[main f6e3910] Roon Almanac Update 2026-09-18
+ 3 files changed, 16 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (81%)
+To github.com:Burroughs7005/music-almanac.git
+   88fa96f..f6e3910  main -> main
+[2026-09-18 05:00:01.998477] Scansione RoonBuddy per il 18/09...
+  🎵 MATCH TROVATO: Joni: Jazz Interpretations of the Joni Mitchell Songbook - Colin Steele Quartet (2020)
+  🎵 MATCH TROVATO: House for Sale - It’s Immaterial (2020)
+  🎵 MATCH TROVATO: Live in New York City - Paul Simon (2012)
