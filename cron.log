@@ -1526,3 +1526,11 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Knife - Aztec Camera (1984)
   🎵 MATCH TROVATO: Cosa succederà alla ragazza - Lucio Battisti (1992)
   🎵 MATCH TROVATO: Small Change - Tom Waits (1976)
+[main 3ca000d] Roon Almanac Update 2026-09-22
+ 4 files changed, 14 insertions(+), 3 deletions(-)
+ rewrite music_history.xml (72%)
+To github.com:Burroughs7005/music-almanac.git
+   5ab9811..3ca000d  main -> main
+[2026-09-22 05:00:01.663359] Scansione RoonBuddy per il 22/09...
+  🎵 MATCH TROVATO: Homogenic - Björk (1997)
+  🎵 MATCH TROVATO: Discipline - King Crimson (1981)
