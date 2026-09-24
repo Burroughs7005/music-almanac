@@ -1534,3 +1534,14 @@ To github.com:Burroughs7005/music-almanac.git
 [2026-09-22 05:00:01.663359] Scansione RoonBuddy per il 22/09...
   🎵 MATCH TROVATO: Homogenic - Björk (1997)
   🎵 MATCH TROVATO: Discipline - King Crimson (1981)
+[main 2971c2b] Roon Almanac Update 2026-09-23
+ 3 files changed, 15 insertions(+), 2 deletions(-)
+ rewrite music_history.xml (64%)
+To github.com:Burroughs7005/music-almanac.git
+   3ca000d..2971c2b  main -> main
+[2026-09-23 05:00:01.673255] Scansione RoonBuddy per il 23/09...
+  🎵 MATCH TROVATO: North - Elvis Costello (2003)
+  🎵 MATCH TROVATO: Worldwide - Everything But the Girl (1991)
+  🎵 MATCH TROVATO: Aja - Steely Dan (1977)
+  🎵 MATCH TROVATO: The Last Ship - Sting (2013)
+  🎵 MATCH TROVATO: With a Twist... - Todd Rundgren (1997)
