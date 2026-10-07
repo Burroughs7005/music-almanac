@@ -1,0 +1,8 @@
+{
+  "items": [
+    {"key":"demo-new","artist":"Peter Gabriel","title":"ESEMPIO FITTIZIO — nuovo album","date":"2026-10-02","formats":["CD","Digital Media"],"kind":"Uscita recente","reason":"Nella tua collezione","known":true,"url":"https://musicbrainz.org/"},
+    {"key":"demo-reissue","artist":"Joni Mitchell","title":"ESEMPIO FITTIZIO — edizione di catalogo","date":"2026-10-02","formats":["12\" Vinyl"],"kind":"Ristampa / nuova edizione di catalogo","reason":"Nella tua collezione","known":true,"url":"https://musicbrainz.org/"},
+    {"key":"demo-similar","artist":"Artista dimostrativo","title":"ESEMPIO FITTIZIO — da scoprire","date":"2026-10-02","formats":["CD"],"kind":"Uscita recente","reason":"Affine a Steely Dan, Michael Franks","known":false,"url":"https://musicbrainz.org/"}
+  ],
+  "warnings":["Anteprima offline: tutti i titoli sono esempi fittizi, non annunci di uscite reali."]
+}

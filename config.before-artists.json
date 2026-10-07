@@ -1,0 +1,52 @@
+{
+  "csv": "RoonBuddy.csv",
+  "environment_file": "/home/pi/music-almanac/.env",
+  "contact_env": "ROON_GMAIL_ADDRESS",
+  "state_dir": "state",
+  "timezone": "Europe/London",
+  "contact": "your-address@example.com",
+  "lookback_days": 21,
+  "similar_seeds": 40,
+  "similar_threshold": 0.65,
+  "similar_min_seeds": 2,
+  "similar_max": 25,
+  "types": [
+    "Album",
+    "EP"
+  ],
+  "exclude_secondary_types": [
+    "Compilation",
+    "Interview",
+    "Spokenword"
+  ],
+  "formats": [],
+  "exclude_artists": [],
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 465,
+    "mode": "ssl",
+    "username": "your-address@example.com",
+    "sender": "your-address@example.com",
+    "recipient": "your-address@example.com",
+    "password_env": "ROON_SMTP_PASSWORD"
+  },
+  "smtp_env": {
+    "username": "ROON_GMAIL_ADDRESS",
+    "sender": "ROON_GMAIL_ADDRESS",
+    "recipient": "ROON_EMAIL_TO"
+  },
+  "aliases": {
+    "Daryl Hall and John Oates": "Daryl Hall & John Oates",
+    "Daryll Hall & John Oates": "Daryl Hall & John Oates",
+    "Hall & Oates": "Daryl Hall & John Oates",
+    "Hall and Oates": "Daryl Hall & John Oates",
+    "Dee C Lee": "Dee C. Lee",
+    "It’s Immaterial": "It's Immaterial",
+    "Fabrizio de André": "Fabrizio De André",
+    "Penguin Café": "Penguin Cafe",
+    "The Penguin Cafe Orchestra": "Penguin Cafe Orchestra",
+    "Yusuf": "Cat Stevens",
+    "Yusuf/Cat Stevens": "Cat Stevens"
+  },
+  "artist_ids": {}
+}

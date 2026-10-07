@@ -1,0 +1,178 @@
+{
+  "album_rows": 1241,
+  "raw_distinct_artist_strings": 280,
+  "blank_artist_rows": 3,
+  "top_artists": [
+    [
+      "Pino Daniele",
+      28
+    ],
+    [
+      "Bruce Springsteen",
+      26
+    ],
+    [
+      "Peter Gabriel",
+      23
+    ],
+    [
+      "Joe Jackson",
+      22
+    ],
+    [
+      "Joni Mitchell",
+      22
+    ],
+    [
+      "Paul Weller",
+      20
+    ],
+    [
+      "Ivano Fossati",
+      19
+    ],
+    [
+      "Earth, Wind & Fire",
+      18
+    ],
+    [
+      "Todd Rundgren",
+      18
+    ],
+    [
+      "David Bowie",
+      17
+    ],
+    [
+      "Michael Franks",
+      17
+    ],
+    [
+      "Tom Waits",
+      17
+    ],
+    [
+      "King Crimson",
+      16
+    ],
+    [
+      "Paul Simon",
+      16
+    ],
+    [
+      "The Waterboys",
+      16
+    ],
+    [
+      "Al Jarreau",
+      15
+    ],
+    [
+      "Miles Davis",
+      15
+    ],
+    [
+      "R.E.M.",
+      15
+    ],
+    [
+      "Franco Battiato",
+      14
+    ],
+    [
+      "The Beatles",
+      14
+    ],
+    [
+      "XTC",
+      14
+    ],
+    [
+      "David Sylvian",
+      13
+    ],
+    [
+      "Hue and Cry",
+      13
+    ],
+    [
+      "Steely Dan",
+      13
+    ],
+    [
+      "Billy Joel",
+      12
+    ],
+    [
+      "Deacon Blue",
+      12
+    ],
+    [
+      "Fabrizio De André",
+      12
+    ],
+    [
+      "John Martyn",
+      12
+    ],
+    [
+      "Paolo Conte",
+      12
+    ],
+    [
+      "Stevie Wonder",
+      12
+    ],
+    [
+      "U2",
+      12
+    ],
+    [
+      "Djavan",
+      11
+    ],
+    [
+      "Everything But the Girl",
+      11
+    ],
+    [
+      "Garland Jeffreys",
+      11
+    ],
+    [
+      "Kate Bush",
+      11
+    ],
+    [
+      "Suzanne Vega",
+      11
+    ],
+    [
+      "Brian Eno",
+      10
+    ],
+    [
+      "Niccolò Fabi",
+      10
+    ],
+    [
+      "Pink Floyd",
+      10
+    ],
+    [
+      "Prefab Sprout",
+      10
+    ]
+  ],
+  "album_date_decades": {
+    "195": 6,
+    "196": 29,
+    "197": 209,
+    "198": 371,
+    "199": 234,
+    "200": 135,
+    "201": 118,
+    "202": 136
+  },
+  "interpretation_it": "Collezione orientata a cantautorato italiano, pop/rock britannico, soul, jazz e musica brasiliana. Conteggio album, non ascolti o valutazioni. Collaborazioni e alias aumentano il numero di nomi distinti."
+}

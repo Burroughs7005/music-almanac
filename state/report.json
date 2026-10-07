@@ -1,0 +1,27 @@
+{
+  "start": "2026-09-16",
+  "end": "2026-10-06",
+  "items": [],
+  "warnings": [
+    "Ben Folds Five: data incompleta, edizione 8fbdb210-39a4-4f83-9332-89271a0804fc esclusa",
+    "E Street Band: ValueError: identità ambigua/non trovata; imposta artist_ids. Candidati: The E Street Band (senza descrizione) [d6652e7b-33fe-49ef-8336-4c863b4f996f]; The E Street Band (members of the real \"E Street Band\" plus other iconic greats) [a4b557c0-4039-4d7b-91f3-30778f28f522]; The Ghost of Bruce Springsteen & the E Street Band (Finnish Bruce Springsteen tribute band) [7abe8819-0146-4003-a87b-4bf44243f0a0]",
+    "Dire Straits: data incompleta, edizione 69cbdc84-211f-4e06-b143-bbec80b961da esclusa",
+    "Dire Straits: data incompleta, edizione ec159cc0-321c-433a-a6d2-ee4563650b86 esclusa",
+    "Everything But the Girl: data incompleta, edizione b0dfc755-da8a-48af-a41a-839028a0d592 esclusa",
+    "Genesis: data incompleta, edizione 02ac6507-f7c0-4a2e-99ce-3ae3fc893e90 esclusa",
+    "Genesis: data incompleta, edizione f6259194-99cd-4f4f-a709-0f8f0ef1d95a esclusa",
+    "Laurie Anderson: data incompleta, edizione acd1a0e6-f2b8-4b18-b134-29fb41e599ca esclusa",
+    "Mercy Mwenje: ValueError: identità ambigua/non trovata; imposta artist_ids. Candidati: nessuno",
+    "Michael Jackson: data incompleta, edizione de6e1acd-40f9-49d0-b434-45c41626ed94 esclusa",
+    "Michael Jackson: data incompleta, edizione 1be63ec6-889c-4af4-8f4e-af57ab7e3b91 esclusa",
+    "Dave Holland: data incompleta, edizione 678cd065-a43d-430c-8280-eb1686e0f61a esclusa",
+    "Paul McCartney: data incompleta, edizione e5ecb6b8-0ea7-42f8-bfd4-a3abcea7e15e esclusa",
+    "Penguin Cafe: data incompleta, edizione ad7d9e84-749c-4ce3-9814-7786e3a6c4fa esclusa",
+    "Penguin Cafe: data incompleta, edizione 668dca5e-80f9-45ef-9ef9-83c07a4b2088 esclusa",
+    "Stevie Wonder: data incompleta, edizione 492b6c6c-2d42-4131-be66-838ac10fc570 esclusa",
+    "Sting: data incompleta, edizione a237df27-2678-4e82-96c1-a913822a70e3 esclusa",
+    "The Cowboy Mouth: ValueError: identità ambigua/non trovata; imposta artist_ids. Candidati: nessuno",
+    "U2: data incompleta, edizione 4c43d9c6-fa16-484d-b172-6cf4948ba9a9 esclusa",
+    "Van Morrison: data incompleta, edizione 35f7f4ad-b7ae-4ef2-b707-a08f80e82c4d esclusa"
+  ]
+}
