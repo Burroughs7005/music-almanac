@@ -1732,3 +1732,14 @@ To github.com:Burroughs7005/music-almanac.git
   🎵 MATCH TROVATO: Tunnel of Love - Bruce Springsteen (1987)
   🎵 MATCH TROVATO: September Songs - Hue and Cry (2015)
   🎵 MATCH TROVATO: Ecco - Niccolò Fabi (2012)
+[main 9d3d899] Roon Almanac Update 2026-10-10
+ 9 files changed, 288 insertions(+), 30 deletions(-)
+ rewrite music_history.xml (72%)
+ create mode 100644 weekly.log
+To github.com:Burroughs7005/music-almanac.git
+   4f66741..9d3d899  main -> main
+[2026-10-10 05:00:02.426925] Scansione RoonBuddy per il 10/10...
+  🎵 MATCH TROVATO: Liminal - Brian Eno & Beatie Wolfe (2025)
+  🎵 MATCH TROVATO: The River - Bruce Springsteen (1980)
+  🎵 MATCH TROVATO: In the Court of the Crimson King - King Crimson (1969)
+  🎵 MATCH TROVATO: New Blood - Peter Gabriel (2011)

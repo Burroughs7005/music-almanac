@@ -3,81 +3,11 @@ import datetime
 import urllib.parse
 import subprocess
 import os
-import math
-import unicodedata
-from html import escape
 from feedgen.feed import FeedGenerator
 
 # Configurazione per glasgy
 CSV_FILE = "RoonBuddy.csv"
 LOG_FILE = "sent_albums.log"
-
-
-
-def normalize_plex_text(value):
-    # Preserve edition names and accents; normalize Unicode, case and whitespace.
-    return " ".join(unicodedata.normalize("NFKC", value or "").casefold().split())
-
-
-class PlexAlbumLinks:
-    """Read-only Plex lookup. Fail closed on errors or ambiguous metadata."""
-
-    def __init__(self):
-        self.index = {}
-        self.ready = False
-        base_url = os.environ.get("PLEX_URL", "").strip()
-        token = os.environ.get("PLEX_TOKEN", "").strip()
-        section_id = os.environ.get("PLEX_MUSIC_SECTION_ID", "").strip()
-        if not base_url and not token and not section_id:
-            print("Plex: configurazione assente; link disabilitati.")
-            return
-        if not base_url or not token or not section_id:
-            print("Plex: servono PLEX_URL, PLEX_TOKEN e PLEX_MUSIC_SECTION_ID.")
-            return
-        try:
-            parsed = urllib.parse.urlsplit(base_url)
-            if (parsed.scheme not in ("http", "https") or not parsed.hostname
-                    or parsed.username or parsed.password or parsed.query or parsed.fragment):
-                raise ValueError("Invalid server URL")
-            timeout = float(os.environ.get("PLEX_TIMEOUT", "10"))
-            if not math.isfinite(timeout) or timeout <= 0:
-                raise ValueError("Invalid timeout")
-            from plexapi.server import PlexServer
-            server = PlexServer(base_url.rstrip("/"), token, timeout=timeout)
-            section = server.library.sectionByID(int(section_id))
-            if section.type != "artist":
-                raise ValueError("Not a music library")
-            # PlexAPI handles pagination. Build once, including all editions,
-            # rather than relying on a fuzzy search's first result.
-            for album in section.albums():
-                key = (normalize_plex_text(album.parentTitle),
-                       normalize_plex_text(album.title))
-                self.index.setdefault(key, {})[str(album.ratingKey)] = album
-            self.ready = True
-        except Exception as exc:
-            # Never print exception details: these can contain credentials.
-            self.index.clear()
-            print(f"Plex: collegamento non disponibile ({type(exc).__name__}); RSS prosegue.")
-
-    def url_for(self, artist, title, year):
-        if not self.ready:
-            return None
-        key = (normalize_plex_text(artist), normalize_plex_text(title))
-        candidates = list(self.index.get(key, {}).values())
-        if len(candidates) > 1:
-            # Year only disambiguates; reissue dates may differ from Roon.
-            candidates = [a for a in candidates if str(a.year) == str(year)]
-        if len(candidates) != 1:
-            print(f"Plex: corrispondenza assente o ambigua per {artist} — {title}.")
-            return None
-        try:
-            # PlexAPI supplies machineIdentifier and metadata key; no token
-            # is embedded in the public RSS link.
-            return candidates[0].getWebURL()
-        except Exception as exc:
-            print(f"Plex: URL non disponibile ({type(exc).__name__}); RSS prosegue.")
-            return None
-
 
 def load_sent_albums():
     if not os.path.exists(LOG_FILE): return []
@@ -141,7 +71,6 @@ def get_roon_matches():
     return sorted(matches, key=lambda x: x['year'], reverse=True)
 
 def generate_rss(albums):
-    plex_links = PlexAlbumLinks() if albums else None
     fg = FeedGenerator()
     fg.id("https://github.com/Burroughs7005/music-almanac")
     fg.title('Almanacco Musicale (Roon Master)')
@@ -161,9 +90,7 @@ def generate_rss(albums):
             q = urllib.parse.quote(f"{alb['artist']} {alb['title']}")
             s_link = f"http://googleusercontent.com/spotify.com/{q}"
             y_link = f"https://www.youtube.com/results?search_query={q}"
-            plex_url = plex_links.url_for(alb['artist'], alb['title'], alb['year'])
-            extra = f" | <a href='{escape(plex_url, quote=True)}'>Plex</a>" if plex_url else ""
-            content += f"<li><strong>{escape(alb['title'])}</strong> - {escape(alb['artist'])} ({escape(alb['year'])})<br><small><a href='{s_link}'>Spotify</a> | <a href='{y_link}'>YouTube</a>{extra}</small></li>"
+            content += f"<li><strong>{alb['title']}</strong> - {alb['artist']} ({alb['year']})<br><small><a href='{s_link}'>Spotify</a> | <a href='{y_link}'>YouTube</a></small></li>"
     content += "</ul>"
     fe.content(content, type='html')
     fg.rss_file('music_history.xml')
