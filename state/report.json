@@ -1,23 +1,91 @@
 {
-  "start": "2026-09-16",
-  "end": "2026-10-06",
-  "items": [],
+  "start": "2026-09-19",
+  "end": "2026-10-09",
+  "items": [
+    {
+      "key": "491e84d36baf218c30a90bcd1c7eb32412a1072d42b55fe7ab18999d28cca5ea",
+      "artist": "Genesis",
+      "title": "From Genesis To Revelation",
+      "date": "2026-10-09",
+      "formats": [
+        "Blu-ray",
+        "CD"
+      ],
+      "kind": "Ristampa / nuova edizione di catalogo",
+      "reason": "Nella tua collezione",
+      "known": true,
+      "url": "https://musicbrainz.org/release/ebda1e72-483f-421d-9261-9fd3aa7565b1"
+    },
+    {
+      "key": "b9112b87180c3b508892f7c722a8db2b4340bcd9a1f814e8ef24205d45548862",
+      "artist": "Dave Holland",
+      "title": "Freedom Call: Sextet - Unity",
+      "date": "2026-10-02",
+      "formats": [
+        "Digital Media"
+      ],
+      "kind": "Prima edizione nel catalogo quest’anno; registrazione da verificare",
+      "reason": "Nella tua collezione",
+      "known": true,
+      "url": "https://musicbrainz.org/release/e6ce375f-6520-4644-986b-7e9bb641c571"
+    },
+    {
+      "key": "e8687f29362b2a0bbdea6bf3eb0f4da51a2b5a78f2f2757ed63b9297ceb1effe",
+      "artist": "Pearl Jam",
+      "title": "Tokyo, Japan - March 3rd 2003",
+      "date": "2026-10-09",
+      "formats": [
+        "SHM-CD"
+      ],
+      "kind": "Ristampa / nuova edizione di catalogo",
+      "reason": "Nella tua collezione",
+      "known": true,
+      "url": "https://musicbrainz.org/release/5a8bd1b3-1369-491d-8c69-16e34f530027"
+    },
+    {
+      "key": "2ea7262869c23866f0e357a1763c02fdfc7edba91ec46d12e93f87e0f18fdd94",
+      "artist": "The Beatles",
+      "title": "Rubber Soul (Super Deluxe 4CD Edition)",
+      "date": "2026-10-02",
+      "formats": [
+        "CD"
+      ],
+      "kind": "Prima edizione nel catalogo quest’anno; registrazione da verificare",
+      "reason": "Nella tua collezione",
+      "known": true,
+      "url": "https://musicbrainz.org/release/01ddbd89-633b-4591-b01b-6587186a83df"
+    },
+    {
+      "key": "2dc00b0784339864e73146f09b1495c2e16b5a767969860d0fb96efcf841de21",
+      "artist": "The Beatles",
+      "title": "Rubber Soul",
+      "date": "2026-10-02",
+      "formats": [
+        "CD"
+      ],
+      "kind": "Ristampa / nuova edizione di catalogo",
+      "reason": "Nella tua collezione",
+      "known": true,
+      "url": "https://musicbrainz.org/release/f6c75108-7303-4722-8bb3-b1116d599247"
+    }
+  ],
   "warnings": [
     "Ben Folds Five: data incompleta, edizione 8fbdb210-39a4-4f83-9332-89271a0804fc esclusa",
     "E Street Band: ValueError: identità ambigua/non trovata; imposta artist_ids. Candidati: The E Street Band (senza descrizione) [d6652e7b-33fe-49ef-8336-4c863b4f996f]; The E Street Band (members of the real \"E Street Band\" plus other iconic greats) [a4b557c0-4039-4d7b-91f3-30778f28f522]; The Ghost of Bruce Springsteen & the E Street Band (Finnish Bruce Springsteen tribute band) [7abe8819-0146-4003-a87b-4bf44243f0a0]",
     "Dire Straits: data incompleta, edizione 69cbdc84-211f-4e06-b143-bbec80b961da esclusa",
     "Dire Straits: data incompleta, edizione ec159cc0-321c-433a-a6d2-ee4563650b86 esclusa",
     "Everything But the Girl: data incompleta, edizione b0dfc755-da8a-48af-a41a-839028a0d592 esclusa",
-    "Genesis: data incompleta, edizione 02ac6507-f7c0-4a2e-99ce-3ae3fc893e90 esclusa",
     "Genesis: data incompleta, edizione f6259194-99cd-4f4f-a709-0f8f0ef1d95a esclusa",
+    "Genesis: data incompleta, edizione 02ac6507-f7c0-4a2e-99ce-3ae3fc893e90 esclusa",
+    "Genesis: data incompleta, edizione 0bc41721-9106-4fb0-8648-9c265762fb01 esclusa",
     "Laurie Anderson: data incompleta, edizione acd1a0e6-f2b8-4b18-b134-29fb41e599ca esclusa",
     "Mercy Mwenje: ValueError: identità ambigua/non trovata; imposta artist_ids. Candidati: nessuno",
     "Michael Jackson: data incompleta, edizione de6e1acd-40f9-49d0-b434-45c41626ed94 esclusa",
     "Michael Jackson: data incompleta, edizione 1be63ec6-889c-4af4-8f4e-af57ab7e3b91 esclusa",
     "Dave Holland: data incompleta, edizione 678cd065-a43d-430c-8280-eb1686e0f61a esclusa",
     "Paul McCartney: data incompleta, edizione e5ecb6b8-0ea7-42f8-bfd4-a3abcea7e15e esclusa",
-    "Penguin Cafe: data incompleta, edizione ad7d9e84-749c-4ce3-9814-7786e3a6c4fa esclusa",
     "Penguin Cafe: data incompleta, edizione 668dca5e-80f9-45ef-9ef9-83c07a4b2088 esclusa",
+    "Penguin Cafe: data incompleta, edizione ad7d9e84-749c-4ce3-9814-7786e3a6c4fa esclusa",
     "Stevie Wonder: data incompleta, edizione 492b6c6c-2d42-4131-be66-838ac10fc570 esclusa",
     "Sting: data incompleta, edizione a237df27-2678-4e82-96c1-a913822a70e3 esclusa",
     "The Cowboy Mouth: ValueError: identità ambigua/non trovata; imposta artist_ids. Candidati: nessuno",
